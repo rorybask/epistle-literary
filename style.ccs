@@ -1,24 +1,36 @@
+/* Import a professional Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Libre Baskerville', serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #333;
+  background-color: #002f6c; /* deep blue */
   color: white;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
   color: white;
-  margin-right: 1rem;
+  margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -27,13 +39,42 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main Content */
 main {
-  padding: 2rem;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 
+/* Homepage intro box */
+.intro {
+  background-color: #f0f4f8;
+  padding: 2rem;
+  border-left: 5px solid #002f6c;
+  margin-bottom: 2rem;
+}
+
+/* Donate button */
+button, input[type="submit"] {
+  background-color: #002f6c;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0148a4;
+}
+
+/* Footer */
 footer {
-  background-color: #eee;
+  background-color: #f2f2f2;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  color: #555;
+  margin-top: 3rem;
 }
