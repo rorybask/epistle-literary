@@ -1,80 +1,169 @@
-/* Import a professional Google Font */
+/* Import elegant serif font */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles */
 body {
   font-family: 'Libre Baskerville', serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #222;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* Layout Containers */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Header */
 header {
-  background-color: #002f6c; /* deep blue */
+  background-color: #002f6c;
   color: white;
-  padding: 1.5rem 2rem;
+  padding: 2.5rem 1rem 1.5rem;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
 /* Navigation */
 nav {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 nav a {
   color: white;
-  margin: 0 1rem;
+  margin: 0 1.25rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #e2e8f0;
 }
 
-/* Main Content */
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Main content */
 main {
   padding: 3rem 2rem;
   max-width: 800px;
   margin: auto;
 }
 
-/* Homepage intro box */
+/* Intro Box / Hero Section */
 .intro {
   background-color: #f0f4f8;
-  padding: 2rem;
-  border-left: 5px solid #002f6c;
-  margin-bottom: 2rem;
+  padding: 2.5rem 2rem;
+  border-left: 6px solid #002f6c;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
 }
 
-/* Donate button */
+/* Section Headers */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Button styles */
 button, input[type="submit"] {
   background-color: #002f6c;
   color: white;
   border: none;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover, input[type="submit"]:hover {
   background-color: #0148a4;
+  transform: translateY(-2px);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
-  background-color: #f2f2f2;
+  background-color: #f8f9fa;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
   color: #555;
-  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 0 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .intro {
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
 }
