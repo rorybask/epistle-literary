@@ -281,3 +281,16 @@ nav a.active {
   border-bottom: 2px solid #1a4dab; /* keep underline for active page */
   font-weight: 600; /* optional: makes active page stand out more */
 }
+.logo {
+  height: 60px;   /* adjust as needed */
+  vertical-align: middle;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+nav a {
+  margin: 0 15px;
+}
