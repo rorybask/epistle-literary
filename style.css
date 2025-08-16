@@ -234,3 +234,17 @@ article p {
     max-height: 60px;
   }
 }
+p {
+  margin-bottom: 1.5rem; /* a bit more breathing room */
+}
+
+
+ul, ol {
+  margin-left: 2rem; 
+  margin-bottom: 1.5rem; 
+  padding-left: 1rem; 
+}
+
+li {
+  margin-bottom: 0.5rem; 
+}
