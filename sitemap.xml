@@ -25,4 +25,10 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Learn More page -->
+  <url>
+    <loc>https://epistleliterary.org/learn.html</loc>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
