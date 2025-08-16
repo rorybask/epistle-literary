@@ -264,3 +264,20 @@ article p {
   font-size: 1.05rem;
 }
 
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent; /* invisible underline by default */
+  color: black; /* or whatever text color you prefer */
+  font-weight: 500;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #1a4dab; /* blue underline on hover */
+}
+
+nav a.active {
+  border-bottom: 2px solid #1a4dab; /* keep underline for active page */
+  font-weight: 600; /* optional: makes active page stand out more */
+}
