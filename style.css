@@ -248,3 +248,40 @@ ul, ol {
 li {
   margin-bottom: 0.5rem; 
 }
+
+/* Shared intro block styling */
+.intro {
+  background-color: #f0f4f8;
+  padding: 2.5rem 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Left border for first intro */
+.intro {
+  border-left: 6px solid #002f6c;
+}
+
+/* Right border for partner intro */
+.intro.partner {
+  border-left: none;
+  border-right: 6px solid #002f6c;
+}
+
+/* WLF logo styling */
+.partner-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.partner-content p {
+  flex: 1;
+}
+
+.wlf-logo {
+  max-height: 70px;
+  width: auto;
+}
