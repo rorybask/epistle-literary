@@ -249,7 +249,7 @@ li {
   margin-bottom: 0.5rem; 
 }
 
-/* Shared intro block styling */
+/* Intro box shared styling */
 .intro {
   background-color: #f0f4f8;
   padding: 2.5rem 2rem;
@@ -259,10 +259,10 @@ li {
   font-family: 'Libre Baskerville', serif;
 }
 
-/* Headings inside intro boxes */
+/* Headings inside intro blocks (fix spacing!) */
 .intro h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;  /* consistent top + bottom margin */
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
 }
@@ -276,4 +276,30 @@ li {
 .intro.partner {
   border-left: none;
   border-right: 6px solid #002f6c;
+}
+
+/* WLF logo centered below text */
+.wlf-logo {
+  display: block;
+  margin: 1.5rem auto 1rem auto;
+  max-height: 60px;
+  width: auto;
+  opacity: 0.9;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  background-color: #002f6c;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #0148a4;
+  transform: translateY(-2px);
 }
