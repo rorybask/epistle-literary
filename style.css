@@ -277,12 +277,3 @@ li {
   border-left: none;
   border-right: 6px solid #002f6c;
 }
-
-/* WLF logo centered below text */
-.wlf-logo {
-  display: block;
-  margin: 1.5rem auto 0 auto;
-  max-height: 60px;
-  width: auto;
-  opacity: 0.9;
-}
