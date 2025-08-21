@@ -259,29 +259,30 @@ li {
   font-family: 'Libre Baskerville', serif;
 }
 
-/* Left border for first intro */
+/* Headings inside intro boxes */
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
+/* Left border for the first intro box */
 .intro {
   border-left: 6px solid #002f6c;
 }
 
-/* Right border for partner intro */
+/* Right border for the partner box */
 .intro.partner {
   border-left: none;
   border-right: 6px solid #002f6c;
 }
 
-/* WLF logo styling */
-.partner-content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.partner-content p {
-  flex: 1;
-}
-
+/* WLF logo centered below text */
 .wlf-logo {
-  max-height: 70px;
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  max-height: 60px;
   width: auto;
+  opacity: 0.9;
 }
