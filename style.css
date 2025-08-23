@@ -279,20 +279,19 @@ li {
 }
 
 /* --- Buttons --- */
-.btn-donate {
+.donate-button {
   display: inline-block;
   background-color: #002f6c;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  color: #fff;
+  padding: 0.85rem 1.75rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  font-size: 1rem;
-  margin-top: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-donate:hover {
+.donate-button:hover {
   background-color: #0148a4;
   transform: translateY(-2px);
 }
