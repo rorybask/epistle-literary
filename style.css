@@ -318,25 +318,3 @@ li {
   margin-bottom: 0.3rem;
   font-style: italic;
 }
-
-.issue-btn {
-  display: inline-block;
-  margin: 12px 0 24px 0;
-  padding: 10px 18px;
-  background-color: #0b1c2d;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-}
-
-.issue-btn:hover {
-  opacity: 0.85;
-}
-
-/* Hide PDFs only on the Published Works page */
-@media (max-width: 768px) {
-  .published-page iframe {
-    display: none;
-  }
-}
